@@ -1,4 +1,6 @@
-﻿using System;
+﻿//This is the worst craperie ever
+
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -64,6 +66,7 @@ namespace TestRepo
 
     }
 }
+
 
 /*
     logicalDatabaseElement.Value.CreateOnADLDS(() =>
