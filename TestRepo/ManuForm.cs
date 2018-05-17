@@ -31,5 +31,10 @@ namespace TestRepo
         {
             MessageBox.Show(string.Format("Vacations start on {0} and end on {1}",e.Start,e.End));
         }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            label2.Text = string.Format("{0:f2}%", performanceCounter1.RawValue);
+        }
     }
 }
