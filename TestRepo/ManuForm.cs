@@ -26,5 +26,10 @@ namespace TestRepo
         {
             toolStripStatusLabel1.Text = string.Format("{0}X, {1}Y", e.X, e.Y);
         }
+
+        private void monthCalendar1_DateChanged(object sender, DateRangeEventArgs e)
+        {
+            MessageBox.Show(string.Format("Vacations start on {0} and end on {1}",e.Start,e.End));
+        }
     }
 }
