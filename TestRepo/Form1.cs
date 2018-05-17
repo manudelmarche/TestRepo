@@ -16,7 +16,12 @@ namespace TestRepo
             MyCar.Make = "Porsche";
             MyCar.Power = "377";
             formatCar = c => string.Format("my fantastic {0} has a whopping {1} horsepower", MyCar.Make, MyCar.Power);
-            button1.Click += (s, e) => MessageBox.Show(MyCar.ToString(formatCar));
+            button1.Click += (s, e) =>
+            {
+                MessageBox.Show(MyCar.ToString(formatCar));
+                ManuForm mForm = new ManuForm();
+                mForm.ShowDialog();
+            };
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -36,6 +41,10 @@ namespace TestRepo
         private void button2_Click(object sender, EventArgs e)
         {
             MessageBox.Show("Bucterie de Scapin");
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
         }
 
         //private void button1_Click(object sender, EventArgs e)
