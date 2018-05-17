@@ -40,7 +40,10 @@ namespace TestRepo
 
         private void button2_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Bucterie de Scapin");
+            //MessageBox.Show("Bucterie de Scapin");
+            FormPhil MyForm = new FormPhil();
+            //test
+            MyForm.ShowDialog();
         }
 
         private void button1_Click(object sender, EventArgs e)
