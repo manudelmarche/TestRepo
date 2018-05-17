@@ -1,31 +1,25 @@
 ﻿//This is the worst craperie ever
 
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
 using System.Windows.Forms;
 
 namespace TestRepo
 {
     public partial class Form1 : Form
     {
-        private Car MyCar=new Car();
+        private Car MyCar = new Car();
         Func<Car, string> formatCar;
         public Form1()
         {
             InitializeComponent();
             MyCar.Make = "Porsche";
             MyCar.Power = "377";
-            formatCar = c => string.Format("my fantastic {0} has a whopping {1} horsepower",MyCar.Make,MyCar.Power);
+            formatCar = c => string.Format("my fantastic {0} has a whopping {1} horsepower", MyCar.Make, MyCar.Power);
             button1.Click += (s, e) => MessageBox.Show(MyCar.ToString(formatCar));
         }
 
         private void Form1_Load(object sender, EventArgs e)
-        { 
+        {
         }
 
         private void Bucht(Func<object> p)
@@ -36,6 +30,11 @@ namespace TestRepo
         private string Test()
         {
             return "test";
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Bucterie de Scapin");
         }
 
         //private void button1_Click(object sender, EventArgs e)
@@ -57,7 +56,7 @@ namespace TestRepo
             return string.Format("{0} has {1} horsepower", Make, Power);
         }
 
-        public string ToString(Func<Car,string> format)
+        public string ToString(Func<Car, string> format)
         {
             if (format != null)
                 return format(this);
