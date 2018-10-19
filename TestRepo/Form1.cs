@@ -26,6 +26,7 @@ namespace TestRepo
 
         private void Form1_Load(object sender, EventArgs e)
         {
+            MessageBox.Show("This is a test for pull request");
         }
 
         private void Bucht(Func<object> p)
