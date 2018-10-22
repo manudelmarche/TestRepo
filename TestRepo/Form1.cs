@@ -29,6 +29,11 @@ namespace TestRepo
             MessageBox.Show("This is a test for pull request with a conflict");
         }
 
+        private void Conflict()
+        {
+            MessageBox.Show("Conflict!");
+        }
+
         private void Bucht(Func<object> p)
         {
             MessageBox.Show(p.Invoke().ToString());
