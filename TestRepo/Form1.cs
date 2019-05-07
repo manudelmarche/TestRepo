@@ -15,7 +15,8 @@ namespace TestRepo
             InitializeComponent();
             MyCar.Make = "Porsche";
             MyCar.Power = "377";
-            formatCar = c => string.Format("my fantastic {0} has a whopping {1} horsepower", MyCar.Make, MyCar.Power);
+            MyCar.Model = "GT3";
+            formatCar = c => string.Format("my fantastic {0} {1} has a whopping {2} horsepower", MyCar.Make,MyCar.Model, MyCar.Power);
             button1.Click += (s, e) =>
             {
                 MessageBox.Show(MyCar.ToString(formatCar));
@@ -69,6 +70,8 @@ namespace TestRepo
     {
         public string Make { get; set; }
         public string Power { get; set; }
+
+        public string Model { get; set; }
 
         public override string ToString()
         {
