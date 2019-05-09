@@ -30,8 +30,18 @@ namespace TestRepo
             //MessageBox.Show("This is a test for pull request with a conflict");
         }
 
-        private void Nothing()
+        private void Nothing(bool detectedBullshit)
         {
+            int numberOfBulsshitters = 0;
+            if(detectedBullshit)
+            {
+                numberOfBulsshitters=1;
+            }
+            else
+            {
+                numberOfBulsshitters = 0;
+            }
+
             MessageBox.Show("ZIZIZ WAZIZIZ");
         }
 
