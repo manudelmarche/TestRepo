@@ -30,6 +30,11 @@ namespace TestRepo
             //MessageBox.Show("This is a test for pull request with a conflict");
         }
 
+        private bool IsTradeGood(int ordertype)
+        {
+            return true;
+        }
+
         private bool Nothing(bool detectedBullshit, bool detectedImposteur)
         {
             bool WereInTrouble = false;
