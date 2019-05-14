@@ -13,6 +13,7 @@ namespace TestRepo
         public Form1()
         {
             InitializeComponent();
+            this.Text = "Car stats";
             MyCar.Make = "Porsche";
             MyCar.Power = "377";
             MyCar.Model = "GT3";
