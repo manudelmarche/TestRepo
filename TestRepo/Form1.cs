@@ -32,7 +32,7 @@ namespace TestRepo
 
         private void Conflict()
         {
-
+            //ZIZIZ a gonflikt
         }
 
         private bool Nothing(bool detectedBullshit, bool detectedImposteur)
