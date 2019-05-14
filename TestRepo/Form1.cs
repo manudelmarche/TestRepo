@@ -35,6 +35,11 @@ namespace TestRepo
             return true;
         }
 
+        private bool IsTradeGood(int OrderType, string Pair)
+        {
+            return false;
+        }
+
         private bool Nothing(bool detectedBullshit, bool detectedImposteur)
         {
             bool WereInTrouble = false;
